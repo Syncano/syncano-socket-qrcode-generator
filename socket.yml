@@ -1,0 +1,43 @@
+name: qr-code
+description: QR Code Generator Integration
+version: 0.0.1
+
+endpoints:
+  generate-qr-code-image:
+    description: Generates qr code image of text inputed.
+    parameters:
+      text:
+        type: string
+        description: "Text to encode to QR Image"
+        example: "Generating QR image"
+      options:
+        type: object
+        description: "Image options object. Refer to `https://www.npmjs.com/package/qr-image`."
+        example: |
+          {
+            "options":
+              {
+              "type": "png"
+              }
+          }
+    response:
+      mimetype: application/json
+      examples:
+        -
+          exit_code: 200
+          description: Success
+          example: |
+            {
+              "message": "QR Image",
+              "statusCode": 200,
+              "data": {}
+            }
+        -
+          exit_code: 400
+          description: Failed
+          example: |
+            {
+              "message": "Make sure to use `POST` request method for generating QRCode",
+              "statusCode": 400,
+              "data": {}
+            }
