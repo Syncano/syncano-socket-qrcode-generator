@@ -1,10 +1,10 @@
-name: qr-code
+name: qr-code-generator
 description: QR Code Generator Integration
 version: 0.0.1
 
 endpoints:
   generate-qr-code-image:
-    description: Generates qr code image of text inputed.
+    description: Generates QR code image of text inputed.
     parameters:
       text:
         type: string

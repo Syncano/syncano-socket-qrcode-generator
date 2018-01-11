@@ -10,8 +10,8 @@ describe('Generate QR Code', () => {
     run('generate-qr-code-image', {
       meta
     }).then((response) => {
-      expect(response.data.message).to.equal('Make sure to use `POST`' +
-      ' request method for generating QRCode');
+      const errorMessage = 'Make sure to use POST request method for generating QRCode';
+      expect(response.data.message).to.equal(errorMessage);
       expect(response.data.statusCode).to.equal(400);
       expect(response.data.data).to.be.empty;
       done();
@@ -27,7 +27,7 @@ describe('Generate QR Code', () => {
       args,
       meta
     }).then((response) => {
-      expect(response.data.message).to.equal('Enter text to generate QR Code.');
+      expect(response.data.data).to.equal('Enter text to generate QR Code.');
       done();
     });
   });
