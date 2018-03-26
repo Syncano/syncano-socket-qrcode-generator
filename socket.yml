@@ -1,6 +1,6 @@
 name: qr-code-generator
 description: QR Code Generator Integration
-version: 0.0.1
+version: 0.0.2
 runtime: nodejs_v8
 keywords:
   - qrcode
