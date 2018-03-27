@@ -1,10 +1,9 @@
 name: qr-code-generator
 description: QR Code Generator Integration
-version: 0.0.3
+version: 0.0.4
 runtime: nodejs_v8
 keywords:
   - qrcode
-
 endpoints:
   generate-qr-code-image:
     description: Generates QR code image of text inputed.
@@ -17,7 +16,9 @@ endpoints:
             - Generating QR image
         options:
           type: object
-          description: Image options object. Refer to `https://www.npmjs.com/package/qr-image`.
+          description: >-
+            Image options object. Refer to
+            `https://www.npmjs.com/package/qr-image`.
           examples:
             - |
               {
