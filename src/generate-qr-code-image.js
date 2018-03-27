@@ -1,8 +1,8 @@
-import Syncano from 'syncano-server';
+import Syncano from '@syncano/core';
 import qr from 'qr-image';
 
 export default async (ctx) => {
-  const { response } = Syncano(ctx);
+  const { response } = new Syncano(ctx);
   const requestMethod = ctx.meta.request.REQUEST_METHOD;
 
   const checkQRImage = () => new Promise((resolve, reject) => {
@@ -21,7 +21,8 @@ export default async (ctx) => {
         statusCode: 200,
         data: getQRImage
       });
-    } throw new Error('not available');
+    }
+    throw new Error('not available');
   } catch (error) {
     return response.json({
       message: 'Make sure to use POST request method for generating QRCode',

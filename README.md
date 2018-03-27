@@ -1,6 +1,6 @@
 # Syncano Socket Aws-photo-rekognition
 
-[![CircleCI](https://circleci.com/gh/Syncano/syncano-socket-qrcode-generator/tree/develop.svg?style=svg)](https://circleci.com/gh/Syncano/syncano-socket-qrcode-generator/tree/develop)
+[![CircleCI](https://circleci.com/gh/Syncano/syncano-socket-qrcode-generator.svg?style=svg)](https://circleci.com/gh/Syncano/syncano-socket-qrcode-generator)
 
 This socket encodes data (text) in a QR Code, it generates a binary stream representing the QR Code.
 

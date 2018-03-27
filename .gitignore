@@ -1,4 +1,9 @@
-.DS_Store
+.idea/
 .dist/
-node_modules/
+node_modules
+**/scripts/.bundles
+**/.DS_Store
+.DS_STORE
+.envrc
+.env
 .npmignore

@@ -1,5 +1,5 @@
 import { assert, expect } from 'chai';
-import { run, generateMeta } from 'syncano-test';
+import { run, generateMeta } from '@syncano/test';
 
 const meta = generateMeta('generate-qr-code-image');
 let args = {};
